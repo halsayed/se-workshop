@@ -1,10 +1,10 @@
 ---
-title: Welcome to the Nutanix Enterprise AI Workshop
+title: Welcome to the SE NAI Workshop
 hide:
   - navigation
 ---
 
-# Welcome to the Nutanix Enterprise AI Workshop
+# Welcome to the SE NAI Workshop
 
 This two-day, hands-on workshop is designed to equip you with the knowledge and skills to understand, deploy, and manage Nutanix Enterprise AI. You will gain a deep understanding of the NAI architecture, its core components, and how to leverage it to build and deploy generative AI applications.
 
