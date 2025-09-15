@@ -1,0 +1,167 @@
+site_name: Nutanix Enterprise AI Workshop
+site_description: Two-day trainer enablement workshop for Nutanix Enterprise AI
+site_author: Nutanix Training Team
+site_url: https://nai-workshop.nutanix.com
+
+# Repository
+repo_name: nutanix/nai-workshop
+repo_url: https://github.com/nutanix/nai-workshop
+edit_uri: edit/main/docs/
+
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  logo: assets/workshop_logo.png
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ?
+            'dark' : 'light'
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nutanix
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nutanix
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/nutanix
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: nutanix
+      repo: nai-workshop
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Workshop Overview:
+    - Introduction: overview/introduction.md
+    - Prerequisites: overview/prerequisites.md
+    - Lab Environment: overview/lab-environment.md
+  - Day 1:
+    - Welcome & Overview: day1/welcome.md
+    - NAI Introduction: day1/nai-introduction.md
+    - NAI Call Flow: day1/nai-call-flow.md
+    - Deploying NKP & NAI: day1/deploying-nkp-nai.md
+    - Hands-on Lab: day1/hands-on-lab.md
+  - Day 2:
+    - Welcome Day 2: day2/welcome.md
+    - LLM Concepts Recap: day2/llm-concepts.md
+    - Deploy Your First Chatbot: day2/deploy-chatbot.md
+    - Flowise.ai Introduction: day2/flowise-introduction.md
+    - n8n Introduction: day2/n8n-introduction.md
+    - Preparing HPOC: day2/preparing-hpoc.md
+  - Resources:
+    - External Links: resources/external-links.md
+    - Troubleshooting: resources/troubleshooting.md
+    - Additional Reading: resources/additional-reading.md
+  - Appendix:
+    - Glossary: appendix/glossary.md
+    - FAQ: appendix/faq.md
