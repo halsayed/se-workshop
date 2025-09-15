@@ -1,11 +1,11 @@
-site_name: Nutanix Enterprise AI Workshop
+site_name: SE NAI Workshop
 site_description: Two-day trainer enablement workshop for Nutanix Enterprise AI
-site_author: Nutanix Training Team
-site_url: https://nai-workshop.nutanix.com
+site_author: Husain Ebrahim
+site_url: https://halsayed.github.io/se-workshop/
 
 # Repository
-repo_name: nutanix/nai-workshop
-repo_url: https://github.com/nutanix/nai-workshop
+repo_name: halsayed/se-workshop
+repo_url: https://github.com/halsayed/se-workshop
 edit_uri: edit/main/docs/
 
 
