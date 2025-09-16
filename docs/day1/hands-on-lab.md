@@ -3,6 +3,17 @@
 
 # Hands-on Lab: Deploying NKP + NAI
 
+## Workshop Resources
+
+### Presentation Slides
+- [05_SE_NAI_NAI_Hands-on_workshop_v1_02-06-2025.pptx](https://nutanixinc-my.sharepoint.com/:p:/r/personal/husain_ebrahim_nutanix_com/Documents/workshops/se_nai_workshop/slides/05_SE_NAI_NAI_Hands-on_workshop_v1_02-06-2025.pptx?d=w00c4654901584f1b995a78c21dd25aa0&csf=1&web=1&e=7GD1Q4)
+
+### Deployment Summary Documents
+- [nai_full_deployment_nai2.3_v1.docx](https://nutanixinc-my.sharepoint.com/:w:/r/personal/husain_ebrahim_nutanix_com/Documents/workshops/se_nai_workshop/assets/nai_full_deployment_nai2.3_v1.docx?d=wd86810758dbe48af98915108c3102a18&csf=1&web=1&e=3I1E3D)
+- [nai_full_deployment_nai2.4_v2.docx](https://nutanixinc-my.sharepoint.com/:w:/r/personal/husain_ebrahim_nutanix_com/Documents/workshops/se_nai_workshop/assets/nai_full_deployment_nai2.4_v2.docx?d=wf755d704ae724b11a4486a7297a26d5c&csf=1&web=1&e=44hr5v)
+
+---
+
 This hands-on lab will guide you through the process of deploying the Nutanix Kubernetes Platform (NKP) and Nutanix Enterprise AI (NAI). We will be following the detailed instructions provided in the [NAI on NKP Tutorial](https://nai.howntnx.win/iep/).
 
 ## Lab Objectives
