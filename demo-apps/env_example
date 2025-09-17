@@ -1,0 +1,8 @@
+API_KEY=8a7293c5-2261-4ae6-a10e-2fcbab212949
+API_ENDPOINT=https://nai.lab.ntnx.pro/api/v1
+MODEL_NAME=llama-3-8b-it
+POSTGRES_USER=postgres
+POSTGRES_PASS=Nutanix/4u
+POSTGRES_DB=vector_db
+PGADMIN_USER=husain.ebrahim@nutanix.com
+PGADMIN_PASS=Nutanix/4u
